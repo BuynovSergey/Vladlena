@@ -1,0 +1,35 @@
+.el-root { width: 100px; height: 100px; background-color: aquamarine; overflow: hidden; padding: 20px; position: relative;}
+.el-modal { width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: rgba(0,0,0,0.6); z-index: 3;}
+    .modal { width: 600px; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); text-align: center; color: #fff;}
+.filter-box, .add-articlas { margin: 20px 0;}
+.box-modal { display: none; position: fixed; left: 0; top: 0; bottom: 0; right: 0; background: rgba(0,0,0,0.5); }
+.modal-active { display: flex; justify-content: center; align-items: center;}
+.modal-content { width: 600px; background-color: #fff; padding: 20px;}
+.article-enter { transform: translateX(-350px);}
+.article-enter-active {
+    transform: translateX(0px);
+transition: all 500ms ease-in-out;
+}
+.article-exit {
+    transform: translateX(0px);
+}
+.article-exit-active {
+    transform: translateX(-350px);
+transition: all 500ms ease-in-out;
+}
+.loader {
+    width: 100px; height: 100px; border-radius: 50%; border: #333 dashed 2px; margin: 30px auto;
+    animation: loader infinite linear 3s;
+}
+.box-pages { display: flex; flex-wrap: wrap;}
+.page { padding: 8px 12px; background: slategray; color: #fff; margin: 0 10px 10px 0; cursor: pointer;}
+.page-active { background: slateblue;}
+
+nav a { display: inline-block; padding: 8px 20px; margin: 0 20px 0 0; background: #333; color: #fff; text-decoration: none; }
+.page-not-found { margin: 100px 0; font-size: 50px; text-align: center; color: aquamarine;}
+
+@keyframes loader {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+  
